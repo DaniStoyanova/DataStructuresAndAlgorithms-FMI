@@ -1,7 +1,9 @@
-#include <iostream>
+#include <cmath>
+#include <cstdio>
 #include <vector>
-
-using namespace std; 
+#include <iostream>
+#include <algorithm>
+using namespace std;
 
 void merge(int array[], int const left, int const mid, int const right)
 {
@@ -58,8 +60,8 @@ void mergeSort(int array[], int const begin, int const end)
 
 int main()
 {
-	int N;
-	cin >> N; 
+    int N;
+    cin >> N; 
 
     int* arr; 
     arr = new int[N]; 
@@ -74,10 +76,7 @@ int main()
     int K; 
     cin >> K; 
 
-	mergeSort(arr, 0, N - 1); 
-
-   /* for (int i = 0; i < N; i++)
-        cout << arr[i] << " "; */
+    mergeSort(arr, 0, N - 1); 
 
     long int sum = 0; 
 
@@ -89,5 +88,5 @@ int main()
 
     cout << sum << endl; 
 
-	return 0;
+    return 0;
 }
