@@ -9,8 +9,7 @@ int main()
 {
     int N;
     cin >> N;
-
-
+    
     vector<pair<int, int>> numbers(N);
     numbers[0].first = 0;
     numbers[0].second = 0;
@@ -50,7 +49,6 @@ int main()
             pair1.second = numbers[i].first;
             pair1.first = i;
             new_vec.push_back(pair1);
-
         }
     }
 
